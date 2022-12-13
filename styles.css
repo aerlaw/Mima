@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Open+Sans:wght@300&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #d8e0e5;
+}
+
+
+#mima {
+    margin-left: 10px;
+    font-family: 'Corinthia', cursive, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+/* Barre de navigation */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFF;
+    top: 0;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.link {
+    margin: 10px 10px;
+    margin-top: 5px;
+}
+
+nav,
+.onglets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav input {
+    margin: 8px 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+}
+
+nav form {
+    padding-bottom: 50px;
+}
+
+/* End Barre de navigation */
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header button {
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* End Header */
+
+
+/* Main Section */
+
+.main {
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* End Main Section */
+
+/* Card Section */
+
+.card {
+    width: 18rem;
+}
+
+/* End Card Section */
+
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+/* End Footer */
+
+@media screen and (max-width: 640px) {
+    nav .onglets .link,
+    nav h1 {
+        display: none;
+    }
+    .cards .card {
+        margin-left: 10px;
+    }
+    .cards .card img {
+        width: 300px;
+    }
+}
